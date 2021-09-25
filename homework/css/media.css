@@ -1,0 +1,298 @@
+@media all and (max-width: 1200px) {
+  .display-info__item--create,
+  .display-info__item--change {
+    padding-right: 50px;
+    padding-bottom: 10px;
+  }
+
+  .display-info__item--change {
+    padding-right: 79px;
+  }
+
+  .display-info__item--create::before {
+    top: 15px;
+    right: 60px;
+  }
+
+  .display-info__item--change::before {
+    top: 15px;
+    right: 65px;
+  }
+
+  .created__span {
+    right: 60px;
+    top: 9px;
+  }
+
+  .updated__span {
+    right: 65px;
+    top: 9px;
+  }
+}
+
+@media all and (max-width: 1170px) {
+  .display-info__item--create {
+    padding-left: 170px;
+  }
+}
+
+
+@media all and (max-width: 1124px) {
+  .display-info__item--create {
+    padding-left: 145px;
+  }
+
+  .display-info__item--change {
+    padding-right: 30px;
+  }
+
+  .display-info__item--change::before {
+    right: 16px;
+  }
+
+  .updated__span {
+    right: 19px;
+  }
+}
+
+@media all and (max-width: 1085px) {
+  .display-info__item--create {
+    padding-left: 100px;
+    padding-right: 35px;
+  }
+
+  .display-info__item--create::before {
+    right: 45px;
+  }
+
+  .created__span {
+    right: 47px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .display-info__item--create {
+    padding-left: 130px;
+    padding-right: 35px;
+  }
+
+  .display-info__item--contacts {
+    padding-left: 5px;
+  }
+
+  .display-info__item--actions {
+    padding-left: 53px;
+  }
+
+  .clients__contacts {
+    margin: -10px 10px -17px 0;
+    min-width: 100px;
+  }
+
+  .clients__changed {
+    width: calc(10% + 6px);
+  }
+
+  .clients__created,
+  .clients__changed {
+    position: relative;
+    margin-top: -10px;
+  }
+
+  .created__time, .changed__time {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+@media all and (max-width: 995px) {
+  .display-info__item--create {
+    padding-left: 75px;
+    padding-right: 35px;
+  }
+
+  .clients__full-name {
+    width: calc(28% + 5px);
+  }
+}
+
+@media all and (max-width: 945px) {
+  .display-info__item--create {
+    padding-left: 58px;
+    padding-right: 35px;
+  }
+
+  .display-info__item--change {
+    margin-right: 28px;
+    padding-left: 2px;
+  }
+
+  .clients__created {
+    width: calc(12% - 1px);
+  }
+
+  .clients__changed {
+    width: calc(13% + 6px);
+  }
+
+  .clients__full-name {
+    position: relative;
+    margin-top: -7px;
+  }
+
+  .clients__lastname {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+}
+
+@media all and (max-width: 884px) {
+  .display-info__item--name {
+    padding-left: 23px;
+    background-position: right 16px center;
+  }
+
+  .clients__contacts {
+    margin: -10px 10px -17px 0;
+    min-width: 165px;
+  }
+
+  .display-info__item--actions {
+    padding-left: 108px;
+  }
+
+  .clients__changed {
+    width: calc(15% + 6px);
+  }
+
+  .clients__actions {
+    position: relative;
+    height: 15px;
+  }
+
+  .clients__actions button {
+    position: absolute;
+    left: 0;
+  }
+
+  .actions__edit {
+    top: -10px;
+  }
+
+  .actions__delete {
+    bottom: -10px;
+  }
+}
+
+@media all and (max-width: 884px) {
+  .display-info__item--create {
+      padding-left: 45px;
+      padding-right: 35px;
+  }
+
+  .clients__created {
+    width: calc(14% - 1px);
+  }
+}
+
+@media all and (max-width: 830px) {
+  .display-info__item--create {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .clients__contacts {
+    min-width: 145px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .clients__wrapper {
+    overflow: auto;
+  }
+
+  .clients__table {
+    min-width: 738px;
+  }
+
+  .header__wrapper {
+    width: 80%;
+  }
+
+  .display-info__item--create {
+    padding-left: 26px;
+    padding-right: 17px;
+  }
+
+  .display-info__item--create::before {
+    right: 28px;
+  }
+
+  .created__span {
+    right: 31px;
+  }
+
+  .display-info__item--change {
+    padding-right: 39px;
+  }
+
+  .display-info__item--change::before {
+    right: 25px;
+  }
+
+  .updated__span {
+    right: 27px;
+  }
+
+  .display-info__item--name {
+    padding-left: 17px;
+  }
+
+  .display-info__item--create {
+    padding-left: 34px;
+    padding-right: 17px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header__container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .header__container {
+    justify-content: center;
+  }
+
+  .contact {
+    width: 245px;
+  }
+
+  .contact__name {
+    min-width: 91px;
+    padding: 10px 2px;
+    padding-right: 7px;
+  }
+
+  .contact__list {
+    min-width: 90px;
+  }
+
+  .contact__name::before {
+    right: 6px;
+  }
+
+  .modal__form {
+    width: 245px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__wrapper {
+    display: none;
+  }
+}
