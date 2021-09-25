@@ -40,6 +40,7 @@ export function changeClientModal(data) {
       deleteModalElem.deleteModalDelete.addEventListener('click', () => {
         deleteClientItem(data.id);
         document.getElementById(data.id).remove();
+        location.reload();
       });
     });
   });
