@@ -94,6 +94,7 @@ export function changeClientModal(data) {
 
     if (validateClientForm()) {
       sendClientData(clientObj, 'PATCH');
+      location.reload();
     }
   });
 

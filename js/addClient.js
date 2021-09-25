@@ -43,11 +43,12 @@ export function addClientModal() {
     clientObj.surname = createForm.inputSurname.value;
     clientObj.lastName = createForm.inputLastname.value;
     clientObj.contacts = contactsArr;
-    console.log(clientObj);
 
     if (validateClientForm()) {
       sendClientData(clientObj, 'POST');
+      location.reload();
     }
+
   });
 
   createForm.cancelBtn.textContent = 'Отмена';
