@@ -206,8 +206,8 @@ module.exports = createServer(async (req, res) => {
         if (req.method === 'POST') {
           const createdItem = createClient(await drainJson(req));
           res.statusCode = 201;
-          res.setHeader('Access-Control-Expose-Headers', 'https://teempresents.github.io/clients-app');
-          res.setHeader('https://teempresents.github.io/clients-app', `${URI_PREFIX}/${createdItem.id}`);
+          res.setHeader('Access-Control-Expose-Headers', 'Location');
+          res.setHeader('Location', `${URI_PREFIX}/${createdItem.id}`);
           return createdItem;
         }
       } else {
@@ -237,7 +237,7 @@ module.exports = createServer(async (req, res) => {
   // выводим инструкцию, как только сервер запустился...
   .on('listening', () => {
     if (process.env.NODE_ENV !== 'test') {
-      console.log(`Сервер CRM запущен. Вы можете использовать его по адресу https://teempresents.github.io/clients-app`);
+      console.log(`Сервер CRM запущен. Вы можете использовать его по адресу http://localhost:${PORT}`);
       console.log('Нажмите CTRL+C, чтобы остановить сервер');
       console.log('Доступные методы:');
       console.log(`GET ${URI_PREFIX} - получить список клиентов, в query параметр search можно передать поисковый запрос`);
