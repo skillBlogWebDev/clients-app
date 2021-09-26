@@ -1,5 +1,5 @@
 export async function fetchClients() {
-  const response = await fetch('http://localhost:3000/api/clients');
+  const response = await fetch('https://teempresents.github.io/clients-app/api/clients');
   const data = await response.json();
 
   return data;
